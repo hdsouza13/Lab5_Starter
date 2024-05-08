@@ -4,15 +4,15 @@ window.addEventListener('DOMContentLoaded', init);
 
 function select_horn(event){
 
-  // get the horn selected from the dropdown
+  // get the horn selected 
   let horn_type = event.target.value;
 
-  // select the image tag and update "src" with the image path of selected horn
+  // select the image tag and update "src" 
   let image = document.querySelector('img');
   let image_path = 'assets/images/' + String(horn_type) + '.svg';
   image.setAttribute("src", image_path);
 
-  // select the audio tag and update the "src" with the audio path of the selected horn
+  // select the audio tag and update the "src" 
   let audio = document.querySelector('audio')
   let audio_path = 'assets/audio/' + String(horn_type) + '.mp3';
   audio.setAttribute("src", audio_path)
@@ -55,7 +55,7 @@ function play_audio(){
   audio.play();
 
 
-  // add confetti if the party horn is selectedf
+  // add confetti if the party horn selected
   if (audio.getAttribute('src') == 'assets/audio/party-horn.mp3'){
     const jsConfetti = new JSConfetti();
     jsConfetti.addConfetti();

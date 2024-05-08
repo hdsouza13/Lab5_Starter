@@ -2,10 +2,6 @@
 
 window.addEventListener('DOMContentLoaded', init);
 
-// explore.js
-
-window.addEventListener('DOMContentLoaded', init);
-
 let voices = [];
 
 function populateVoiceList() {
