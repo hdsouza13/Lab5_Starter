@@ -1,9 +1,20 @@
 # Lab 5 - Starter
 
+I worked alone
+
 Expose: https://hdsouza13.github.io/Lab5_Starter/expose.html
 
 Explore: https://hdsouza13.github.io/Lab5_Starter/explore.html
 
-1-) Yes, unit tests would be appropriate for testing the "message" feature of a messaging application. Unit tests are used to test individual components or units of code in isolation, and the "message" feature can be considered a discrete unit of functionality within the application. By writing unit tests, you can verify that the message creation, sending, and receiving processes function correctly, ensuring that messages are properly transmitted between users and that any associated functionalities, such as message formatting or attachments, work as expected.
+1) Would you use a unit test to test the “message” feature of a messaging application? Why or why not? For this question, assume the “message” feature allows a user to write and send a message to another user.
 
-2-) Yes, unit tests would also be suitable for testing the "max message length" feature of a messaging application. This feature involves enforcing a specific constraint on the input data, which is typically implemented within a specific unit of code. Writing unit tests allows you to verify that this constraint is correctly enforced, ensuring that users cannot exceed the specified message length limit. Additionally, unit tests provide a way to validate edge cases, such as when the message length is exactly 80 characters or when special characters are included, ensuring robustness and reliability of the feature.
+- I wouldn't advocate for this approach because unit testing might not effectively assess the application's performance on a larger scale, making it impractical to verify if messages are correctly received by other users.
+
+2) Would you use a unit test to test the “max message length” feature of a messaging application? Why or why not? For this question, assume the “max message length” feature prevents the user from typing more than 80 characters.
+
+- I would support this approach because testing the "max message length" is feasible independently of any other users receiving the message. This aspect represents an edge case suitable for unit testing.
+
+
+
+
+
