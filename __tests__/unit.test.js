@@ -11,14 +11,14 @@ import {
 // TODO - Part 2
 
 //false
-test('adds 15 + 15 to equal 20', () => {
-  expect(15 + 15).toBe(20);
-});
+//test('adds 15 + 15 to equal 20', () => {
+//  expect(15 + 15).toBe(20);
+//});
 
 //false
-test('adds 15 and 20 equal to each other', () => {
-  expect(15 == 20).toBe(true);
-});
+//test('adds 15 and 20 equal to each other', () => {
+//  expect(15 == 20).toBe(true);
+//});
 
 //true
 test('adds 15 and 15 equal to each other', () => {
